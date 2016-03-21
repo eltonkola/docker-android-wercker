@@ -32,8 +32,9 @@ RUN cd /usr/local/ && curl -L -O http://dl.google.com/android/android-sdk_r24.4.
 # Install Android tools
 RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter tools 
 RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter platform-tools 
-RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter build-tools-23.0.1 
+RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter build-tools-23.0.2 
 RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter android-23 
+RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter android-22 
 RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter android-19 
 RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter extra 
 RUN echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force -a --filter sys-img-armeabi-v7a-android-19 
